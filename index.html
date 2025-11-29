@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pulse Landing</title>
+  <title>Neon Glass Landing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,173 +15,86 @@
 
   <header>
     <nav class="nav">
-      <div class="brand">
-        <span class="badge">P</span>
-        Pulse
-      </div>
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#insights">Insights</a>
-        <a href="#cta">Get started</a>
-        <a class="cta" href="#cta">Join Beta</a>
+      <div class="brand"><span class="badge">N</span>Neon</div>
+      <div>
+        <a href="#why">Why</a>
+        <a href="#stack">Stack</a>
+        <a class="cta" href="#cta">Start</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="section hero">
+  <main class="wrap">
+    <section class="hero card">
       <div>
-        <div class="eyebrow">
-          <span class="pill">New</span>
-          Launch smarter customer journeys
+        <div class="eyebrow">Live · Neon glass UI</div>
+        <h1>Build a cutting-edge landing in minutes.</h1>
+        <p class="lead">Minimal markup, neon glow, glassmorphism. Swap accents and ship.</p>
+        <div class="actions">
+          <a class="cta" href="#cta">Launch</a>
+          <a class="cta ghost" href="#stack">Preview</a>
         </div>
-        <h1>Simple, modern landing pages that convert on day one.</h1>
-        <p class="lead">Pulse gives you a clean starting point: a crafted layout, soft gradients, and components that stay sharp on any screen.</p>
-        <div class="hero-actions">
-          <a class="cta" href="#cta">Start free</a>
-          <a class="ghost" href="#insights">View live preview</a>
-        </div>
-        <div class="trust-row" aria-label="Trusted by brands">
-          Trusted by fast-moving teams:
-          <div class="logo-row">
-            <span class="logo">Northwind</span>
-            <span class="logo">Aperture</span>
-            <span class="logo">Lumen</span>
-            <span class="logo">Vertex</span>
-          </div>
+        <div class="chips">
+          <span class="chip">Gradient glow</span>
+          <span class="chip">Responsive grid</span>
+          <span class="chip">2 accent vars</span>
         </div>
       </div>
-      <div class="mockup">
-        <div class="mockup-inner">
-          <div class="bar"></div>
-          <div class="stat-grid">
-            <div class="stat">
-              <strong>+142%</strong>
-              Engagement lift
-            </div>
-            <div class="stat">
-              <strong>3.2s</strong>
-              Avg load time
-            </div>
-            <div class="stat">
-              <strong>98</strong>
-              Lighthouse score
-            </div>
-          </div>
-          <div class="grid">
-            <div class="pill">Adaptive layouts</div>
-            <div class="pill">Gradient presets</div>
-            <div class="pill">SEO ready</div>
-            <div class="pill">UI kit included</div>
-          </div>
+      <div class="card" style="margin:0;">
+        <div class="grid">
+          <div class="stat"><strong>92</strong>Light score</div>
+          <div class="stat"><strong>1.2s</strong>First paint</div>
+          <div class="stat"><strong>+38%</strong>CTR lift</div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="features">
-      <div class="section-title">Purpose-built for quick launches</div>
-      <p class="section-sub">Assemble in minutes, keep it modern for months. Use solid typography, intentional space, and crisp color to guide visitors.</p>
+    <section id="why" class="grid">
+      <div class="card">
+        <h3>Glass, not clutter</h3>
+        <p class="lead">One glass card, a few chips, zero fluff. Everything runs on CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Neon palette</h3>
+        <p class="lead">Change <code>--glow</code> and <code>--glow-2</code> to rebrand.</p>
+      </div>
+      <div class="card">
+        <h3>Ship fast</h3>
+        <p class="lead">Drop this HTML/CSS anywhere and hook your CTA.</p>
+      </div>
+    </section>
+
+    <section id="stack" class="card">
       <div class="grid">
-        <div class="card">
-          <h3>Responsive by default</h3>
-          <p>Adaptive layout grid and fluid typography so the page feels polished on phones, tablets, and desktops without extra work.</p>
-        </div>
-        <div class="card">
-          <h3>Modern visuals</h3>
-          <p>Gradient layers and glassmorphic panels that keep depth subtle. Swap accents by changing two CSS variables.</p>
-        </div>
-        <div class="card">
-          <h3>Conversion ready</h3>
-          <p>Clear calls-to-action, social proof slots, and concise copy blocks that highlight the product value right away.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-label="How Pulse works">
-      <div class="section-title">Ship with a proven flow</div>
-      <p class="section-sub">Three steps to publish: choose your accent, drop your copy, connect your CTA. No clutter, no guesswork.</p>
-      <div class="grid">
-        <div class="card step">
-          <div class="step-num">1</div>
-          <div>
-            <h3>Pick your palette</h3>
-            <p>Swap the two accent variables to mirror your brand and keep contrast compliant by default.</p>
-          </div>
-        </div>
-        <div class="card step">
-          <div class="step-num">2</div>
-          <div>
-            <h3>Plug in your story</h3>
-            <p>Replace the headline, subtext, and proof blocks. The spacing and rhythm stay intact.</p>
-          </div>
-        </div>
-        <div class="card step">
-          <div class="step-num">3</div>
-          <div>
-            <h3>Connect the CTA</h3>
-            <p>Point buttons to your signup or demo flow. Keep the sticky nav for quick conversion.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="insights">
-      <div class="section-title">Show numbers, win trust</div>
-      <p class="section-sub">Highlight metrics that matter. Pair proof points with motion and contrast that keep attention on the essentials.</p>
-      <div class="mockup">
-        <div class="mockup-inner">
-          <div class="stat-grid">
-            <div class="stat">
-              <strong>54k</strong>
-              Monthly visitors
-            </div>
-            <div class="stat">
-              <strong>7m 12s</strong>
-              Avg session time
-            </div>
-            <div class="stat">
-              <strong>4.9/5</strong>
-              Satisfaction score
-            </div>
-          </div>
-          <div class="card" style="margin-top: 1rem;">
-            <h3>Adaptive funnel</h3>
-            <p>Guide visitors with a streamlined funnel: hero > proof > CTA. Each block is tuned for clarity, not clutter.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cta">
-      <div class="cta-panel">
         <div>
-          <div class="section-title" style="margin-bottom: 0.3rem;">Ready to launch?</div>
-          <div class="section-sub" style="margin-bottom: 0;">Drop this page into any stack. Adjust colors, copy, and links in minutes.</div>
+          <h3>Stack</h3>
+          <p class="lead">Pure HTML/CSS. No build, no JS required.</p>
         </div>
-        <div class="hero-actions" style="margin: 0;">
-          <a class="cta" href="#">Get started</a>
-          <a class="ghost" href="#">Download HTML</a>
+        <div>
+          <h3>Usage</h3>
+          <p class="lead">Edit the copy, tweak the variables, link your forms.</p>
+        </div>
+        <div>
+          <h3>Ready</h3>
+          <p class="lead">Sticky nav, hero CTA, proof chips, metric card.</p>
         </div>
       </div>
-      <div class="faq" aria-label="Frequently asked questions">
-        <div class="faq-item">
-          <strong>Can I integrate this with my stack?</strong>
-          <span>Yes. Drop the HTML/CSS into any framework or CMS. Classes are scoped to avoid conflicts.</span>
+    </section>
+
+    <section id="cta" class="card">
+      <div class="hero" style="gap:1rem; align-items:center;">
+        <div>
+          <h2 style="margin:0;">Ready to glow?</h2>
+          <p class="lead">Keep it lean, keep it neon.</p>
         </div>
-        <div class="faq-item">
-          <strong>Is it mobile-ready?</strong>
-          <span>Layouts are fluid and tested on small viewports. Grid cards collapse gracefully.</span>
-        </div>
-        <div class="faq-item">
-          <strong>Can I change the look fast?</strong>
-          <span>Update the two accent variables in :root for an instant brand swap.</span>
+        <div class="actions" style="margin:0;">
+          <a class="cta" href="#">Deploy</a>
+          <a class="cta ghost" href="#">Download</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    Made with intent for modern launches. Pulse © 2024.
-  </footer>
+  <footer>Neon Glass · Modern by design.</footer>
 </body>
 </html>
