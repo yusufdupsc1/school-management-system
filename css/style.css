@@ -37,6 +37,16 @@ h1, h2, h3 { font-family: "Sora", "Manrope", system-ui, sans-serif; }
 .one { background: #2f8bff; top: -12rem; left: -10rem; }
 .two { background: #67f1c0; bottom: -18rem; right: -8rem; }
 
+.black-friday-banner {
+  background: linear-gradient(90deg, #ff4444, #ff6b35, #ff4444);
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 header {
   position: sticky; top: 0; z-index: 5;
   backdrop-filter: blur(12px);
