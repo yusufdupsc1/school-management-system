@@ -1,155 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumina Neon Template</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>School Management Demo</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Load JS with defer so it runs after HTML is parsed -->
+  <script src="js/script.js" defer></script>
 </head>
 <body>
- 
-
   <header>
-    <nav class="nav">
-      <div class="brand"><span class="badge">LN</span>Lumina Neon</div>
-      <div>
-        <a href="#features">Features</a>
-        <a href="#sections">Sections</a>
-        <a href="#preview">Preview</a>
-        <a class="cta" href="#cta">Get template</a>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Teachers</a></li>
+        <li><a href="#">Classes</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="wrap">
-    <section class="hero card hero-split">
-      <div>
-        <div class="eyebrow">Hand-made neon · HTML only</div>
-        <h1>Launch a premium landing that looks coded by a pro studio.</h1>
-        <p class="lead">Sculpted glass cards, cinematic glow, and a layout tuned for ThemeForest buyers. Swap your copy and ship—no build tooling, no fluff.</p>
-        <ul class="points">
-          <li>12yr-grade visual system with consistent spacing + tokens</li>
-          <li>Two accent variables to recolor the entire experience</li>
-          <li>Ready for Webflow/Framer imports or plain HTML drops</li>
-        </ul>
-        <div class="actions">
-          <a class="cta" href="#cta">Get the template</a>
-          <a class="cta ghost" href="#preview">See the preview</a>
-        </div>
-        <div class="chips meta">
-          <span class="chip">Glass + neon duality</span>
-          <span class="chip">Responsive from 320px</span>
-          <span class="chip">SEO + fast paint</span>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="floating-tag">NEON · 2024</div>
-        <div class="browser chrome card">
-          <div class="browser-head">
-            <span></span><span></span><span></span>
-            <p>lumina-template.live</p>
-          </div>
-          <div class="browser-body">
-            <div class="stat highlight"><strong>1.2s</strong>First paint</div>
-            <div class="stat"><strong>+38%</strong>CTR lift</div>
-            <div class="stat"><strong>94</strong>Lighthouse</div>
-          </div>
-        </div>
-        <div class="orbital"></div>
-      </div>
-    </section>
-
-    <section class="trust">
-      <p>Pairs with your favorite tools</p>
-      <div class="trust-logos">
-        <span>Framer</span>
-        <span>Webflow</span>
-        <span>Tailwind</span>
-        <span>Plain HTML</span>
-        <span>Figma</span>
-      </div>
-    </section>
-
-    <section id="features" class="grid features">
-      <div class="card">
-        <h3>Glass, not clutter</h3>
-        <p class="lead">One hero, proof chips, modular cards. Everything is semantic HTML and reusable utilities.</p>
-      </div>
-      <div class="card">
-        <h3>Accent tokens</h3>
-        <p class="lead">Change <code>--glow</code> and <code>--glow-2</code> once to rebrand the full experience.</p>
-      </div>
-      <div class="card">
-        <h3>Zero build</h3>
-        <p class="lead">Drop the files on any host. Progressive enhancement without a single dependency.</p>
-      </div>
-      <div class="card">
-        <h3>Conversion ready</h3>
-        <p class="lead">Sticky nav, dual CTAs, proof stats, and a visual frame that feels custom-coded.</p>
-      </div>
-    </section>
-
-    <section id="sections" class="card modules">
-      <div class="grid">
-        <div class="module">
-          <p class="eyebrow">01 · Hero kit</p>
-          <h3>Headline + badges + stat block</h3>
-          <p class="lead">Purpose-built grid with mobile-first constraints and breathing room.</p>
-        </div>
-        <div class="module">
-          <p class="eyebrow">02 · Feature stack</p>
-          <h3>Cards with gradient strokes</h3>
-          <p class="lead">Lightweight cards with layered glow, perfect for benefits, FAQ, or pricing.</p>
-        </div>
-        <div class="module">
-          <p class="eyebrow">03 · Conversion</p>
-          <h3>CTA bar with dual actions</h3>
-          <p class="lead">Couples primary and ghost buttons to catch both “now” and “later” buyers.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="preview" class="card preview">
-      <div class="preview-header">
-        <div>
-          <p class="eyebrow">Preview frame</p>
-          <h3>See the neon depth before you import.</h3>
-          <p class="lead">Floating gradients, glass overlay, and a balanced rhythm you can feel.</p>
-        </div>
-        <div class="actions" style="margin:0;">
-          <a class="cta" href="#cta">Get the files</a>
-          <a class="cta ghost" href="#features">View specs</a>
-        </div>
-      </div>
-      <div class="preview-frame">
-        <div class="preview-pane">
-          <div class="mesh"></div>
-          <div class="mesh second"></div>
-          <div class="grid-lines"></div>
-          <p>Neon glass with depth and intention.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta" class="card final-cta">
-      <div class="hero" style="gap:1rem; align-items:center;">
-        <div>
-          <h2 style="margin:0;">Ready to glow?</h2>
-          <p class="lead">Polish worthy of a 12-year expert—yours in one download.</p>
-        </div>
-        <div class="actions" style="margin:0;">
-          <a class="cta" href="#">Deploy</a>
-          <a class="cta ghost" href="#">Download</a>
-        </div>
-      </div>
-    </section>
+  <main>
+    <h1>School Management System</h1>
+    <p>Demo content here...</p>
   </main>
 
-  <footer>Lumina Neon · Crafted for modern launches.</footer>
-
-  <script src="js/script.js"></script>
+  <footer></footer>
 </body>
 </html>

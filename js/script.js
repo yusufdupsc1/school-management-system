@@ -1,24 +1,34 @@
-// Wait for the page to load
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the footer element
-    var footer = document.querySelector('footer');
-    
-    // Get the current year
-    var currentYear = new Date().getFullYear();
-    
-    // Create the copyright text
-    var copyrightText = '&copy; ' + currentYear + ' ';
-    
-    // Add the copyright to the footer using insertAdjacentHTML
-    footer.insertAdjacentHTML('afterbegin', copyrightText);
+// js/script.js
 
-    // Create Black Friday banner
-    var header = document.querySelector('header');
-    var nav = document.querySelector('header nav');
-    
-    // Create the banner using template literal
-    var bannerHTML = `<div class="black-friday-banner">🔥 BLACK FRIDAY SALE! Get 50% OFF with code <strong>BLACKFRIDAY50</strong> 🔥</div>`;
-    
-    // Insert banner before nav using insertAdjacentHTML
+(function () {
+  // This will run after HTML is parsed because we used `defer`
+
+  // 1. Footer handling
+  var footer = document.querySelector('footer');
+
+  if (footer) {
+    var currentYear = new Date().getFullYear();
+    var copyrightText = '&copy; ' + currentYear + ' ';
+
+    footer.insertAdjacentHTML('afterbegin', copyrightText);
+  } else {
+    console.warn('Footer element not found in the DOM');
+  }
+
+  // 2. Black Friday banner handling
+  var nav = document.querySelector('header nav');
+
+  if (nav) {
+    var bannerHTML = `
+      <div class="black-friday-banner">
+        🔥 BLACK FRIDAY SALE! Get 50% OFF with code 
+        <strong>BLACKFRIDAY50</strong> 🔥
+      </div>
+    `;
+
     nav.insertAdjacentHTML('beforebegin', bannerHTML);
-});
+    console.log('Black Friday banner inserted above nav');
+  } else {
+    console.warn('Header nav not found in the DOM');
+  }
+})();
